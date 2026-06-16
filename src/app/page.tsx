@@ -122,19 +122,6 @@ export default function HomePage() {
                 <Link href="/aanmelden" className="btn btn-koraal" style={{ fontSize: 17 }}>
                   Zet je op de wachtlijst 🐥
                 </Link>
-                <Link
-                  href="https://app.kwekkel.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-ghost"
-                  style={{
-                    backgroundColor: 'rgba(255,255,255,0.12)',
-                    borderColor: 'rgba(255,255,255,0.5)',
-                    color: '#ffffff',
-                  }}
-                >
-                  Open de app
-                </Link>
               </div>
             </div>
 

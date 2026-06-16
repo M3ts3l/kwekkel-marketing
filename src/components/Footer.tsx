@@ -86,7 +86,6 @@ export default function Footer() {
               {[
                 { href: '/blog', label: 'Blog' },
                 { href: '/aanmelden', label: 'Aanmelden' },
-                { href: 'https://app.kwekkel.app', label: 'Open de app', external: true },
               ].map((link) => (
                 <Link
                   key={link.href}
