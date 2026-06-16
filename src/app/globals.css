@@ -1,0 +1,261 @@
+:root {
+  --druif: #6A5AE0;
+  --druif-d: #4B3FB0;
+  --druif-l: #EFEDFC;
+  --koraal: #FF6F61;
+  --koraal-d: #D64A3D;
+  --koraal-l: #FFEDEA;
+  --munt: #16C098;
+  --munt-d: #0E8C70;
+  --munt-l: #E2F8F2;
+  --zon: #FFC23C;
+  --lucht: #57C6F4;
+  --inkt: #2B2B40;
+  --grijs: #6E6E86;
+  --mist: #ECEAF6;
+  --wolk: #F5F4FC;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-nunito), 'Nunito', sans-serif;
+  background-color: var(--wolk);
+  color: var(--inkt);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-baloo), 'Baloo 2', cursive;
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 16px;
+  min-height: 54px;
+  padding: 0 28px;
+  font-family: var(--font-nunito), 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+  line-height: 1;
+  gap: 8px;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  background-color: var(--druif);
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(106, 90, 224, 0.35);
+}
+
+.btn-primary:hover {
+  background-color: var(--druif-d);
+  box-shadow: 0 6px 20px rgba(106, 90, 224, 0.45);
+}
+
+.btn-koraal {
+  background-color: var(--koraal);
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(255, 111, 97, 0.35);
+}
+
+.btn-koraal:hover {
+  background-color: var(--koraal-d);
+  box-shadow: 0 6px 20px rgba(255, 111, 97, 0.45);
+}
+
+.btn-ghost {
+  background-color: #ffffff;
+  color: var(--druif);
+  border: 2px solid var(--druif);
+  box-shadow: none;
+}
+
+.btn-ghost:hover {
+  background-color: var(--druif-l);
+  box-shadow: 0 4px 12px rgba(106, 90, 224, 0.2);
+}
+
+/* Layout */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  width: 100%;
+  height: 50px;
+  padding: 0 16px;
+  border: 2px solid var(--mist);
+  border-radius: 14px;
+  font-family: var(--font-nunito), 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--inkt);
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+  border-color: var(--druif);
+}
+
+input::placeholder {
+  color: var(--grijs);
+  font-weight: 600;
+}
+
+/* Article prose styles */
+article h2 {
+  color: var(--druif-d);
+  font-family: var(--font-baloo), 'Baloo 2', cursive;
+  margin-top: 2em;
+}
+
+article h3 {
+  color: var(--inkt);
+  font-family: var(--font-baloo), 'Baloo 2', cursive;
+  margin-top: 1.5em;
+}
+
+article a {
+  color: var(--druif-d);
+  text-decoration: underline;
+}
+
+article a:hover {
+  color: var(--druif);
+}
+
+article li {
+  margin: 6px 0;
+}
+
+article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 15px;
+}
+
+article th,
+article td {
+  padding: 10px 14px;
+  border: 1px solid var(--mist);
+  text-align: left;
+}
+
+article th {
+  background-color: var(--druif-l);
+  font-weight: 700;
+  color: var(--druif-d);
+}
+
+article tr:nth-child(even) td {
+  background-color: var(--wolk);
+}
+
+article hr {
+  border: none;
+  border-top: 2px solid var(--mist);
+  margin: 2em 0;
+}
+
+article blockquote {
+  border-left: 4px solid var(--druif);
+  margin: 1.5em 0;
+  padding: 0.75em 1.25em;
+  background-color: var(--druif-l);
+  border-radius: 0 12px 12px 0;
+  color: var(--druif-d);
+  font-weight: 600;
+}
+
+/* Utility */
+.text-center {
+  text-align: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Responsive helpers */
+@media (max-width: 768px) {
+  .section {
+    padding: 56px 0;
+  }
+
+  h1 {
+    font-size: clamp(28px, 7vw, 48px);
+  }
+
+  h2 {
+    font-size: clamp(22px, 5.5vw, 36px);
+  }
+}

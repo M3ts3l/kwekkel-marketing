@@ -1,0 +1,20 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kwekkel eend mascotte">
+  <!-- Body -->
+  <ellipse cx="60" cy="80" rx="38" ry="30" fill="#FFC23C"/>
+  <!-- Head -->
+  <circle cx="72" cy="48" r="22" fill="#FFC23C"/>
+  <!-- Wing -->
+  <ellipse cx="40" cy="82" rx="18" ry="12" fill="#E8A800" transform="rotate(-15 40 82)"/>
+  <!-- Beak -->
+  <path d="M90 48 L104 44 L104 52 Z" fill="#FF6F61"/>
+  <!-- Eye -->
+  <circle cx="78" cy="43" r="5" fill="#2B2B40"/>
+  <circle cx="79.5" cy="41.5" r="1.8" fill="#ffffff"/>
+  <!-- Cheek blush -->
+  <ellipse cx="84" cy="52" rx="5" ry="3.5" fill="#FF9A8B" opacity="0.5"/>
+  <!-- Tail feathers -->
+  <path d="M24 72 Q10 60 18 50 Q22 65 30 68 Z" fill="#E8A800"/>
+  <!-- Feet -->
+  <ellipse cx="52" cy="110" rx="10" ry="5" fill="#FF6F61"/>
+  <ellipse cx="70" cy="110" rx="10" ry="5" fill="#FF6F61"/>
+</svg>
