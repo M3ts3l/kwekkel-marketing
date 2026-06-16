@@ -138,17 +138,24 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Duck illustration */}
+            {/* Logo illustration */}
             <div
               style={{
-                fontSize: 'clamp(80px, 12vw, 140px)',
-                lineHeight: 1,
                 flexShrink: 0,
-                filter: 'drop-shadow(0 12px 24px rgba(0,0,0,0.15))',
+                filter: 'drop-shadow(0 12px 32px rgba(0,0,0,0.20))',
               }}
               aria-hidden="true"
             >
-              🦆
+              <img
+                src="/kwekkel-logo.svg"
+                alt=""
+                style={{
+                  width: 'clamp(120px, 16vw, 200px)',
+                  height: 'clamp(120px, 16vw, 200px)',
+                  borderRadius: 'clamp(24px, 3vw, 40px)',
+                  display: 'block',
+                }}
+              />
             </div>
           </div>
         </div>

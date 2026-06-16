@@ -151,7 +151,9 @@ export default async function BlogPostPage({ params }: PageProps) {
                 textAlign: 'center',
               }}
             >
-              <div style={{ fontSize: 40, marginBottom: 12 }}>🦆</div>
+              <div style={{ marginBottom: 16 }}>
+                <img src="/kwekkel-logo.svg" alt="Kwekkel" width={64} height={64} style={{ borderRadius: 14, display: 'block', margin: '0 auto' }} />
+              </div>
               <h2
                 style={{
                   fontFamily: 'var(--font-baloo), Baloo 2, cursive',

@@ -25,6 +25,10 @@ export const metadata: Metadata = {
   },
   description:
     'Kwekkel is de veilige chat- en bel-app voor kinderen van 6–11 jaar. Geen vreemden, geen advertenties, toezicht zonder meelezen. Gebouwd in Nederland.',
+  icons: {
+    icon: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
 }
 
 export default function RootLayout({

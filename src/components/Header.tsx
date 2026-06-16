@@ -44,12 +44,18 @@ export default function Header() {
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: 8,
+            gap: 10,
             textDecoration: 'none',
             flexShrink: 0,
           }}
         >
-          <span style={{ fontSize: 28, lineHeight: 1 }}>🦆</span>
+          <img
+            src="/kwekkel-logo.svg"
+            alt="Kwekkel logo"
+            width={36}
+            height={36}
+            style={{ borderRadius: 8, display: 'block' }}
+          />
           <span
             style={{
               fontFamily: 'var(--font-baloo), Baloo 2, cursive',

@@ -25,12 +25,18 @@ export default function Footer() {
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: 8,
+                gap: 10,
                 textDecoration: 'none',
                 marginBottom: 12,
               }}
             >
-              <span style={{ fontSize: 28 }}>🦆</span>
+              <img
+                src="/kwekkel-logo.svg"
+                alt="Kwekkel logo"
+                width={36}
+                height={36}
+                style={{ borderRadius: 8, display: 'block' }}
+              />
               <span
                 style={{
                   fontFamily: 'var(--font-baloo), Baloo 2, cursive',
