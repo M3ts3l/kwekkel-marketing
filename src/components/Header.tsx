@@ -74,46 +74,37 @@ export default function Header() {
         >
           <Link
             href="/#hoe-het-werkt"
+            className="nav-link"
             style={{
               fontWeight: 700,
               fontSize: 15,
               color: 'var(--inkt)',
               textDecoration: 'none',
-              opacity: 0.85,
-              transition: 'opacity 0.15s',
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.opacity = '1')}
-            onMouseLeave={(e) => (e.currentTarget.style.opacity = '0.85')}
           >
             Hoe het werkt
           </Link>
           <Link
             href="/blog"
+            className="nav-link"
             style={{
               fontWeight: 700,
               fontSize: 15,
               color: 'var(--inkt)',
               textDecoration: 'none',
-              opacity: 0.85,
-              transition: 'opacity 0.15s',
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.opacity = '1')}
-            onMouseLeave={(e) => (e.currentTarget.style.opacity = '0.85')}
           >
             Blog
           </Link>
           <Link
             href="/#prijzen"
+            className="nav-link"
             style={{
               fontWeight: 700,
               fontSize: 15,
               color: 'var(--inkt)',
               textDecoration: 'none',
-              opacity: 0.85,
-              transition: 'opacity 0.15s',
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.opacity = '1')}
-            onMouseLeave={(e) => (e.currentTarget.style.opacity = '0.85')}
           >
             Prijzen
           </Link>

@@ -47,23 +47,13 @@ export default function Features() {
           {features.map((feature) => (
             <div
               key={feature.title}
+              className="feature-card"
               style={{
                 backgroundColor: '#ffffff',
                 borderRadius: 20,
                 padding: '36px 28px',
                 boxShadow: '0 4px 24px rgba(43, 43, 64, 0.08)',
                 border: '1px solid var(--mist)',
-                transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-              }}
-              onMouseEnter={(e) => {
-                const el = e.currentTarget
-                el.style.transform = 'translateY(-4px)'
-                el.style.boxShadow = '0 8px 32px rgba(43, 43, 64, 0.13)'
-              }}
-              onMouseLeave={(e) => {
-                const el = e.currentTarget
-                el.style.transform = 'translateY(0)'
-                el.style.boxShadow = '0 4px 24px rgba(43, 43, 64, 0.08)'
               }}
             >
               <div style={{ fontSize: 48, marginBottom: 20, lineHeight: 1 }}>

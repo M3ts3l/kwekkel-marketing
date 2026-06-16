@@ -17,6 +17,7 @@ function formatDate(dateStr: string): string {
 export default function BlogCard({ post }: BlogCardProps) {
   return (
     <article
+      className="blog-card"
       style={{
         backgroundColor: '#ffffff',
         borderRadius: 20,
@@ -26,17 +27,6 @@ export default function BlogCard({ post }: BlogCardProps) {
         display: 'flex',
         flexDirection: 'column',
         gap: 12,
-        transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-      }}
-      onMouseEnter={(e) => {
-        const el = e.currentTarget
-        el.style.transform = 'translateY(-4px)'
-        el.style.boxShadow = '0 8px 28px rgba(43, 43, 64, 0.12)'
-      }}
-      onMouseLeave={(e) => {
-        const el = e.currentTarget
-        el.style.transform = 'translateY(0)'
-        el.style.boxShadow = '0 4px 20px rgba(43, 43, 64, 0.07)'
       }}
     >
       <time
@@ -79,19 +69,14 @@ export default function BlogCard({ post }: BlogCardProps) {
 
       <Link
         href={`/blog/${post.slug}`}
+        className="blog-card-link"
         style={{
-          display: 'inline-flex',
-          alignItems: 'center',
-          gap: 4,
           color: 'var(--druif)',
           fontWeight: 800,
           fontSize: 14,
           textDecoration: 'none',
           marginTop: 4,
-          transition: 'gap 0.15s ease',
         }}
-        onMouseEnter={(e) => (e.currentTarget.style.gap = '8px')}
-        onMouseLeave={(e) => (e.currentTarget.style.gap = '4px')}
       >
         Lees meer →
       </Link>

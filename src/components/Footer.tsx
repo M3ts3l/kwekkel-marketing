@@ -87,19 +87,13 @@ export default function Footer() {
                   href={link.href}
                   target={link.external ? '_blank' : undefined}
                   rel={link.external ? 'noopener noreferrer' : undefined}
+                  className="footer-link"
                   style={{
                     color: 'rgba(255,255,255,0.75)',
                     textDecoration: 'none',
                     fontSize: 15,
                     fontWeight: 600,
-                    transition: 'color 0.15s',
                   }}
-                  onMouseEnter={(e) =>
-                    (e.currentTarget.style.color = '#ffffff')
-                  }
-                  onMouseLeave={(e) =>
-                    (e.currentTarget.style.color = 'rgba(255,255,255,0.75)')
-                  }
                 >
                   {link.label}
                 </Link>

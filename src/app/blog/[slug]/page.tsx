@@ -65,22 +65,16 @@ export default async function BlogPostPage({ params }: PageProps) {
           >
             <Link
               href="/"
+              className="breadcrumb-link"
               style={{ color: 'rgba(255,255,255,0.65)', textDecoration: 'none' }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = '#ffffff')}
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.color = 'rgba(255,255,255,0.65)')
-              }
             >
               Home
             </Link>
             <span aria-hidden="true">›</span>
             <Link
               href="/blog"
+              className="breadcrumb-link"
               style={{ color: 'rgba(255,255,255,0.65)', textDecoration: 'none' }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = '#ffffff')}
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.color = 'rgba(255,255,255,0.65)')
-              }
             >
               Blog
             </Link>
